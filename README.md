@@ -1,3 +1,3 @@
-#Four in a row
+# Four in a row
 
 Play four in a row
