@@ -1,15 +1,15 @@
 class Board {
   constructor() {
-    this.rows = 7;
-    this.columns = 6;
+    this.rows = 6;
+    this.columns = 7;
     this.spaces = this.createSpaces();
   }
   createSpaces() {
     const spaces = [];
-    for (let i = 0; i < this.rows; i++) {
+    for (let x = 0; x < this.columns; x++) {
       const column = [];
-      for (let j = 0; j < this.columns; j++) {
-        const space = new Space(i, j);
+      for (let y = 0; y < this.rows; y++) {
+        const space = new Space(x, y);
         column.push(space);
       }
       spaces.push(column);
